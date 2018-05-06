@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="aidbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="frtb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="groupid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="userinfo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="username" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="front" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="back" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="left" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="right" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="age" Type="Int32" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="race" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="glasses" Type="Int32" />
+  </EntityType>
+  <EntityType Name="queuetb">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="front" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="back" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="left" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="right" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="groupid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="userinfo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="Int32" />
+    <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="race" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="glasses" Type="Int32" />
+    <Property Name="type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="aidbEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="frtb" EntityType="Self.frtb" />
+    <EntitySet Name="queuetb" EntityType="Self.queuetb" />
+  </EntityContainer>
+</Schema>

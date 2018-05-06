@@ -1,0 +1,36 @@
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\Snapshot Maker.exe
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\Snapshot Maker.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Controls.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Imaging.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Math.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Controls.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Controls.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.DirectShow.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Imaging.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Imaging.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Math.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Math.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\obj\Debug\Snapshot_Maker.MainForm.resources
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\obj\Debug\Snapshot_Maker.Properties.Resources.resources
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\obj\Debug\Snapshot_Maker.SnapshotForm.resources
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.csproj.GenerateResource.Cache
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.exe
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\obj\Debug\Snapshot Maker.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\obj\Debug\Snapshot_Maker.CaptureForm.resources
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\Snapshot Maker.exe.config
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\EntityFramework.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\EntityFramework.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Vision.dll
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Vision.pdb
+C:\Users\NickChung\Desktop\AForge.NET-master\Samples\Video\Snapshot Maker\bin\Debug\AForge.Vision.xml

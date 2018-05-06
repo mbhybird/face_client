@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="aidbModelStoreContainer" CdmEntityContainer="aidbEntities">
+    <EntitySetMapping Name="frtb">
+      <EntityTypeMapping TypeName="aidbModel.frtb">
+        <MappingFragment StoreEntitySet="frtb">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="groupid" ColumnName="groupid" />
+          <ScalarProperty Name="userinfo" ColumnName="userinfo" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="front" ColumnName="front" />
+          <ScalarProperty Name="back" ColumnName="back" />
+          <ScalarProperty Name="left" ColumnName="left" />
+          <ScalarProperty Name="right" ColumnName="right" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="race" ColumnName="race" />
+          <ScalarProperty Name="glasses" ColumnName="glasses" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="queuetb">
+      <EntityTypeMapping TypeName="aidbModel.queuetb">
+        <MappingFragment StoreEntitySet="queuetb">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="front" ColumnName="front" />
+          <ScalarProperty Name="back" ColumnName="back" />
+          <ScalarProperty Name="left" ColumnName="left" />
+          <ScalarProperty Name="right" ColumnName="right" />
+          <ScalarProperty Name="uid" ColumnName="uid" />
+          <ScalarProperty Name="groupid" ColumnName="groupid" />
+          <ScalarProperty Name="userinfo" ColumnName="userinfo" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="race" ColumnName="race" />
+          <ScalarProperty Name="glasses" ColumnName="glasses" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

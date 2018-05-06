@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="aidbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="frtb">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="uid" Type="varchar" MaxLength="50" />
+          <Property Name="groupid" Type="varchar" MaxLength="50" />
+          <Property Name="userinfo" Type="nvarchar" MaxLength="200" />
+          <Property Name="username" Type="nvarchar" MaxLength="10" />
+          <Property Name="front" Type="image" />
+          <Property Name="back" Type="image" />
+          <Property Name="left" Type="image" />
+          <Property Name="right" Type="image" />
+          <Property Name="age" Type="int" />
+          <Property Name="gender" Type="varchar" MaxLength="10" />
+          <Property Name="race" Type="varchar" MaxLength="10" />
+          <Property Name="glasses" Type="int" />
+        </EntityType>
+        <EntityType Name="queuetb">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="front" Type="image" />
+          <Property Name="back" Type="image" />
+          <Property Name="left" Type="image" />
+          <Property Name="right" Type="image" />
+          <Property Name="uid" Type="varchar" MaxLength="50" />
+          <Property Name="groupid" Type="varchar" MaxLength="50" />
+          <Property Name="userinfo" Type="nvarchar" MaxLength="200" />
+          <Property Name="age" Type="int" />
+          <Property Name="gender" Type="varchar" MaxLength="10" />
+          <Property Name="race" Type="varchar" MaxLength="10" />
+          <Property Name="glasses" Type="int" />
+          <Property Name="type" Type="varchar" MaxLength="1" />
+        </EntityType>
+        <EntityContainer Name="aidbModelStoreContainer">
+          <EntitySet Name="frtb" EntityType="Self.frtb" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="queuetb" EntityType="Self.queuetb" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="aidbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="frtb">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="groupid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="userinfo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="username" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="front" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="back" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="left" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="right" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="age" Type="Int32" />
+          <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="race" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="glasses" Type="Int32" />
+        </EntityType>
+        <EntityType Name="queuetb">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="front" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="back" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="left" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="right" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <Property Name="uid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="groupid" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="userinfo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="age" Type="Int32" />
+          <Property Name="gender" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="race" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="glasses" Type="Int32" />
+          <Property Name="type" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="aidbEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="frtb" EntityType="Self.frtb" />
+          <EntitySet Name="queuetb" EntityType="Self.queuetb" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="aidbModelStoreContainer" CdmEntityContainer="aidbEntities">
+          <EntitySetMapping Name="frtb">
+            <EntityTypeMapping TypeName="aidbModel.frtb">
+              <MappingFragment StoreEntitySet="frtb">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="groupid" ColumnName="groupid" />
+                <ScalarProperty Name="userinfo" ColumnName="userinfo" />
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="front" ColumnName="front" />
+                <ScalarProperty Name="back" ColumnName="back" />
+                <ScalarProperty Name="left" ColumnName="left" />
+                <ScalarProperty Name="right" ColumnName="right" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="race" ColumnName="race" />
+                <ScalarProperty Name="glasses" ColumnName="glasses" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="queuetb">
+            <EntityTypeMapping TypeName="aidbModel.queuetb">
+              <MappingFragment StoreEntitySet="queuetb">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="front" ColumnName="front" />
+                <ScalarProperty Name="back" ColumnName="back" />
+                <ScalarProperty Name="left" ColumnName="left" />
+                <ScalarProperty Name="right" ColumnName="right" />
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="groupid" ColumnName="groupid" />
+                <ScalarProperty Name="userinfo" ColumnName="userinfo" />
+                <ScalarProperty Name="age" ColumnName="age" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="race" ColumnName="race" />
+                <ScalarProperty Name="glasses" ColumnName="glasses" />
+                <ScalarProperty Name="type" ColumnName="type" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
